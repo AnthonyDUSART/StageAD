@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <EditText
+            android:id="@+id/num_grume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Numero de grume"/>
+
+        <EditText
+        android:id="@+id/longueur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/num_grume"
+        android:layout_marginTop="15dp"
+        android:hint="Longueur en mètre"/>
+
+        <EditText
+            android:id="@+id/diametre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/longueur"
+            android:layout_marginTop="15dp"
+            android:hint="Diametre en centimètre"/>
+
+        <EditText
+            android:id="@+id/ecorce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/diametre"
+            android:layout_marginTop="15dp"
+            android:hint="Pourcentage ecorce"/>
+
+        <TextView
+            android:id="@+id/volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ecorce"
+            android:layout_marginTop="15dp"
+            android:text="volume"/>
+
+        <TextView
+            android:id="@+id/volume_reel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/volume"
+            android:layout_marginTop="15dp"
+            android:text="volume reel"/>
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/volume_reel"
+            android:layout_marginTop="15dp"
+            android:text="Envoyer"/>
+
+    </RelativeLayout>
+z
+</android.support.constraint.ConstraintLayout>
